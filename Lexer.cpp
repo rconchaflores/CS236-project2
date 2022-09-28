@@ -1,3 +1,5 @@
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "cppcoreguidelines-pro-type-member-init"
 #include "Lexer.h"
 #include "Token.h"
 #include "ColonAutomaton.h"
@@ -90,7 +92,7 @@ void Lexer::Run(std::string& input) {
         else {
             maxRead = 1;
             string newDescription = input.substr(0, maxRead);
-            Token* newToken = new Token(TokenType::UNDEFINED, newDescription, lineNumber);
+            auto* newToken = new Token(TokenType::UNDEFINED, newDescription, lineNumber);
             newToken->setDescription(newDescription);
             tokens.push_back(newToken);
         }
@@ -108,3 +110,4 @@ void Lexer::printTokens(){
     }
     cout << "Total Tokens = " << tokens.size() << endl; //don't put a new line after Total Tokens
 }
+#pragma clang diagnostic pop

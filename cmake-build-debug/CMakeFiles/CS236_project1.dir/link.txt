@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/CS236_project1.dir/ColonAutomaton.cpp.o CMakeFiles/CS236_project1.dir/ColonDashAutomaton.cpp.o CMakeFiles/CS236_project1.dir/Lexer.cpp.o CMakeFiles/CS236_project1.dir/main.cpp.o CMakeFiles/CS236_project1.dir/Token.cpp.o  -o CS236_project1 
+/usr/bin/c++ -g CMakeFiles/CS236_project1.dir/ColonAutomaton.cpp.o CMakeFiles/CS236_project1.dir/ColonDashAutomaton.cpp.o CMakeFiles/CS236_project1.dir/Lexer.cpp.o CMakeFiles/CS236_project1.dir/main.cpp.o CMakeFiles/CS236_project1.dir/Token.cpp.o -o CS236_project1 

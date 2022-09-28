@@ -1,3 +1,3 @@
-/users/guest/r/rconcha2/tmp/tmp.8uDH2wojzx/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/users/guest/r/rconcha2/tmp/tmp.8uDH2wojzx/cmake-build-debug/CMakeFiles/edit_cache.dir
-/users/guest/r/rconcha2/tmp/tmp.8uDH2wojzx/cmake-build-debug/CMakeFiles/CS236_project1.dir
+/home/rodrigo/Documents/CS 236/Projects/CS236-project2/cmake-build-debug/CMakeFiles/CS236_project1.dir
+/home/rodrigo/Documents/CS 236/Projects/CS236-project2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/rodrigo/Documents/CS 236/Projects/CS236-project2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

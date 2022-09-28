@@ -1,20 +1,18 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/users/guest/r/rconcha2/tmp/tmp.8uDH2wojzx/ColonAutomaton.cpp" "/users/guest/r/rconcha2/tmp/tmp.8uDH2wojzx/cmake-build-debug/CMakeFiles/CS236_project1.dir/ColonAutomaton.cpp.o"
-  "/users/guest/r/rconcha2/tmp/tmp.8uDH2wojzx/ColonDashAutomaton.cpp" "/users/guest/r/rconcha2/tmp/tmp.8uDH2wojzx/cmake-build-debug/CMakeFiles/CS236_project1.dir/ColonDashAutomaton.cpp.o"
-  "/users/guest/r/rconcha2/tmp/tmp.8uDH2wojzx/Lexer.cpp" "/users/guest/r/rconcha2/tmp/tmp.8uDH2wojzx/cmake-build-debug/CMakeFiles/CS236_project1.dir/Lexer.cpp.o"
-  "/users/guest/r/rconcha2/tmp/tmp.8uDH2wojzx/Token.cpp" "/users/guest/r/rconcha2/tmp/tmp.8uDH2wojzx/cmake-build-debug/CMakeFiles/CS236_project1.dir/Token.cpp.o"
-  "/users/guest/r/rconcha2/tmp/tmp.8uDH2wojzx/main.cpp" "/users/guest/r/rconcha2/tmp/tmp.8uDH2wojzx/cmake-build-debug/CMakeFiles/CS236_project1.dir/main.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../."
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/rodrigo/Documents/CS 236/Projects/CS236-project2/ColonAutomaton.cpp" "CMakeFiles/CS236_project1.dir/ColonAutomaton.cpp.o" "gcc" "CMakeFiles/CS236_project1.dir/ColonAutomaton.cpp.o.d"
+  "/home/rodrigo/Documents/CS 236/Projects/CS236-project2/ColonDashAutomaton.cpp" "CMakeFiles/CS236_project1.dir/ColonDashAutomaton.cpp.o" "gcc" "CMakeFiles/CS236_project1.dir/ColonDashAutomaton.cpp.o.d"
+  "/home/rodrigo/Documents/CS 236/Projects/CS236-project2/Lexer.cpp" "CMakeFiles/CS236_project1.dir/Lexer.cpp.o" "gcc" "CMakeFiles/CS236_project1.dir/Lexer.cpp.o.d"
+  "/home/rodrigo/Documents/CS 236/Projects/CS236-project2/Token.cpp" "CMakeFiles/CS236_project1.dir/Token.cpp.o" "gcc" "CMakeFiles/CS236_project1.dir/Token.cpp.o.d"
+  "/home/rodrigo/Documents/CS 236/Projects/CS236-project2/main.cpp" "CMakeFiles/CS236_project1.dir/main.cpp.o" "gcc" "CMakeFiles/CS236_project1.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.
