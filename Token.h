@@ -23,7 +23,8 @@ enum class TokenType {
     COMMENT,
     STRING,
     UNDEFINED,
-    EOF_TOKEN
+    EOF_TOKEN,
+    ERROR
 };
 
 class Token

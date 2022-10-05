@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CS236_project1.dir/ColonDashAutomaton.cpp.o.d"
   "CMakeFiles/CS236_project1.dir/Lexer.cpp.o"
   "CMakeFiles/CS236_project1.dir/Lexer.cpp.o.d"
+  "CMakeFiles/CS236_project1.dir/Parser.cpp.o"
+  "CMakeFiles/CS236_project1.dir/Parser.cpp.o.d"
   "CMakeFiles/CS236_project1.dir/Token.cpp.o"
   "CMakeFiles/CS236_project1.dir/Token.cpp.o.d"
   "CMakeFiles/CS236_project1.dir/main.cpp.o"

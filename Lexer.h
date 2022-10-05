@@ -22,6 +22,7 @@ public:
 
     void Run(string& input);
     void printTokens();
+    vector<Token*> getTokens();
 
     // TODO: add other public methods here
 

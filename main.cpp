@@ -1,4 +1,5 @@
 #include "Lexer.h"
+#include "Parser.h"
 #include <fstream>
 
 int main(int argc, char** argv) {
@@ -8,8 +9,12 @@ int main(int argc, char** argv) {
 
     Lexer* lexer = new Lexer();
     lexer->Run(file);
-    lexer->printTokens();
-    delete lexer;
+    //lexer->printTokens();
+    vector<Token*> myTokens = lexer->getTokens();
+    Parser* myParser = new Parser(myTokens);
+    myParser->parse();
 
+    delete lexer;
+    delete myParser;
     return 0;
 }

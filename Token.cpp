@@ -79,6 +79,9 @@ string Token::toString(TokenType myType){
         case TokenType::UNDEFINED:
             returnType = "UNDEFINED";
             break;
+        case TokenType::ERROR:
+            returnType = "ERROR";
+            break;
     }
 
     return returnType;

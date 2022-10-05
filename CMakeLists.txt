@@ -15,4 +15,4 @@ add_executable(CS236_project1
         Lexer.h
         main.cpp
         Token.cpp
-        Token.h)
+        Token.h Parser.cpp DatalogProgram.h)

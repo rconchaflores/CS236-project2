@@ -53,7 +53,6 @@ void Lexer::CreateAutomata() {
     automata.push_back(new BlockCommentAutomaton());
     automata.push_back(new BadBlockCommentAutomaton());
     automata.push_back(new CommentAutomaton());
-    // TODO: Add the other needed automata here
 }
 
 void Lexer::Run(std::string& input) {
@@ -86,7 +85,9 @@ void Lexer::Run(std::string& input) {
             lineNumber += maxAutomaton->NewLinesRead();
             string newDescription = input.substr(0, maxRead);
             newToken->setDescription(newDescription);
-            tokens.push_back(newToken);
+            if (newToken->getType() != TokenType::COMMENT){
+                tokens.push_back(newToken);
+            }
         }
 
         else {
@@ -109,5 +110,9 @@ void Lexer::printTokens(){
         cout << "(" << tokens[i]->toString(tokens[i]->getType()) << ",\"" << tokens[i]->getDescription() << "\"," << tokens[i]->getLine() << ")" << endl;
     }
     cout << "Total Tokens = " << tokens.size() << endl; //don't put a new line after Total Tokens
+}
+
+vector<Token*> Lexer::getTokens(){
+    return tokens;
 }
 #pragma clang diagnostic pop

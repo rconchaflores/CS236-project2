@@ -99,10 +99,19 @@
 		<Unit filename="/home/rodrigo/Documents/CS 236/Projects/CS236-project2/ColonDashAutomaton.h">
 			<Option target="CS236_project1"/>
 		</Unit>
+		<Unit filename="/home/rodrigo/Documents/CS 236/Projects/CS236-project2/DatalogProgram.h">
+			<Option target="CS236_project1"/>
+		</Unit>
 		<Unit filename="/home/rodrigo/Documents/CS 236/Projects/CS236-project2/Lexer.cpp">
 			<Option target="CS236_project1"/>
 		</Unit>
 		<Unit filename="/home/rodrigo/Documents/CS 236/Projects/CS236-project2/Lexer.h">
+			<Option target="CS236_project1"/>
+		</Unit>
+		<Unit filename="/home/rodrigo/Documents/CS 236/Projects/CS236-project2/Parser.cpp">
+			<Option target="CS236_project1"/>
+		</Unit>
+		<Unit filename="/home/rodrigo/Documents/CS 236/Projects/CS236-project2/Parser.h">
 			<Option target="CS236_project1"/>
 		</Unit>
 		<Unit filename="/home/rodrigo/Documents/CS 236/Projects/CS236-project2/Token.cpp">
