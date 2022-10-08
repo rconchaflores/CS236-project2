@@ -1,5 +1,3 @@
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "cppcoreguidelines-pro-type-member-init"
 #include "Lexer.h"
 #include "Token.h"
 #include "ColonAutomaton.h"
@@ -115,4 +113,3 @@ void Lexer::printTokens(){
 vector<Token*> Lexer::getTokens(){
     return tokens;
 }
-#pragma clang diagnostic pop

@@ -151,7 +151,17 @@ CMakeFiles/CS236_project1.dir/main.cpp.o: \
  /usr/include/c++/11/bits/istream.tcc \
  /home/rodrigo/Documents/CS\ 236/Projects/CS236-project2/Automaton.h \
  /home/rodrigo/Documents/CS\ 236/Projects/CS236-project2/Token.h \
- /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
+ /home/rodrigo/Documents/CS\ 236/Projects/CS236-project2/Parser.h \
+ /home/rodrigo/Documents/CS\ 236/Projects/CS236-project2/DatalogProgram.h \
+ /home/rodrigo/Documents/CS\ 236/Projects/CS236-project2/Predicate.h \
+ /home/rodrigo/Documents/CS\ 236/Projects/CS236-project2/Parameter.h \
+ /home/rodrigo/Documents/CS\ 236/Projects/CS236-project2/Rule.h \
+ /usr/include/c++/11/set /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/fstream \
+ /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc

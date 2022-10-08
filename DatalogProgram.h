@@ -5,6 +5,7 @@
 #include "Predicate.h"
 #include "Rule.h"
 #include <set>
+#include <iostream>
 
 class DatalogProgram
 {
@@ -13,17 +14,52 @@ private:
     vector<Predicate*> facts;
     vector<Rule*> rules;
     vector<Predicate*> queries;
-    set<string> domain;
+    set<string> domain; //set of parameters in FACTS
 public:
-    DatalogProgram();
-    ~DatalogProgram();
-    void toString(); //Return a DatalogProgram object from the parser and then traverse this structure and use
-    // `toString` as needed to print the required output.
-    //To integrate this project with later projects, be sure to have a way to get the lists of schemes,
-    // facts, rules and queries out of the DatalogProgram.
-    //You must create classes for DatalogProgram, Rule, Predicate, and Parameter to hold the internal representation
-    // of a datalog program. Each class must have a toString method and the output of the program must be formed by these toString methods (not by the parse methods).
+    DatalogProgram(){}
+    ~DatalogProgram(){}
+    void toString() {
+        cout << "Schemes(" << schemes.size() << "):\n";
+        for(unsigned int i = 0; i < schemes.size(); i++){
+            cout << "  " << schemes[i]->schemeToString() << "\n";
+        }
+        cout << "Facts(" << facts.size() << "):\n";
+        for(unsigned int i = 0; i < facts.size(); i++){
+            cout << "  " << facts[i]->toString() << "\n";
+        }
+        cout << "Rules(" << rules.size() << "):\n";
+        for(unsigned int i = 0; i < rules.size(); i++){
+            cout << "  " << rules[i]->ruleToString() << "\n";
+        }
+        cout << "Queries(" << queries.size() << "):\n";
+        for(unsigned int i = 0; i < queries.size(); i++){
+            cout << "  " << queries[i]->queryToString() << "\n";
+        }
+        cout << "Domain(" << domain.size() << "):\n";
+        for(string dom : domain){
+            cout << "  " << dom << endl;
+        }
+    }
 
+    void makeDomain(string dom) {
+        domain.insert(dom);
+    }
+
+    void addScheme(Predicate* scheme){
+        schemes.push_back(scheme);
+    }
+
+    void addFact(Predicate* fact){
+        facts.push_back(fact);
+    }
+
+    void addRule(Rule* rule){
+        rules.push_back(rule);
+    }
+
+    void addQuery(Predicate* query){
+        queries.push_back(query);
+    }
 };
 
 #endif // DATALOGPROGRAM_H

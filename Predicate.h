@@ -13,8 +13,47 @@ private:
 public:
     Predicate()= default;
     ~Predicate()= default;
-    void toString(){
+    string toString(){
+        string output;
+        output = getID() + "(";
+        for(unsigned int i = 0; i < parameters.size()-1; i++){
+            output += parameters[i]->getParameter() + ",";
+        }
+        output += parameters[parameters.size()-1]->getParameter() + ").";
+        return output;
+    }
+    string schemeToString(){
+        string output;
+        output = getID() + "(";
+        for(unsigned int i = 0; i < parameters.size()-1; i++){
+            output += parameters[i]->getParameter() + ",";
+        }
+        output += parameters[parameters.size()-1]->getParameter() + ")";
 
+        return output;
+    }
+
+    string queryToString(){
+        string output;
+        output = getID() + "(";
+        for(unsigned int i = 0; i < parameters.size()-1; i++){
+            output += parameters[i]->getParameter() + ",";
+        }
+        output += parameters[parameters.size()-1]->getParameter() + ")?";
+
+        return output;
+    }
+
+    void setID(string thisID){
+        id = thisID;
+    }
+
+    string getID(){
+        return id;
+    }
+
+    void setParameter(Parameter* parameter){
+        parameters.push_back(parameter);
     }
 
 };

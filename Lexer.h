@@ -10,7 +10,7 @@ class Lexer
 private:
     vector<Automaton*> automata;
     vector<Token*> tokens;
-    int inputRead;
+    int inputRead{};
 
     void CreateAutomata();
 

@@ -11,6 +11,8 @@ int main(int argc, char** argv) {
     lexer->Run(file);
     //lexer->printTokens();
     vector<Token*> myTokens = lexer->getTokens();
+
+    //Vector is passed into myParser correctly
     Parser* myParser = new Parser(myTokens);
     myParser->parse();
 

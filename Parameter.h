@@ -10,10 +10,13 @@ private:
     string p;
 
 public:
-    Parameter()= default;
+    Parameter(string p){
+        this->p = p;
+    }
     ~Parameter()= default;
-    void toString(){
 
+    string getParameter(){
+        return p;
     }
 };
 
